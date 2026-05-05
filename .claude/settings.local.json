@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://wger.de/api/v2/exerciseinfo/?format=json&language=2&category=12&limit=30\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s \"https://wger.de/api/v2/exercisecategory/?format=json\")",
+      "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(f'ID:{c[\\\\\"id\\\\\"]} Name:{c[\\\\\"name\\\\\"]}'\\) for c in data['results']]\")",
+      "Bash(curl -s 'https://wger.de/api/v2/exerciseinfo/?format=json&language=2&category=__TRACKED_VAR__&limit=50')",
+      "Bash(curl -s \"https://wger.de/api/v2/exerciseinfo/?format=json&language=2&category=11&limit=100\")",
+      "Bash(npm create *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(pkill -f \"vite\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s http://localhost:3000/src/main.tsx)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -sv http://localhost:3000/)",
+      "Bash(kill 21262)",
+      "Bash(npx tsc *)",
+      "Read(//tmp/**)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
