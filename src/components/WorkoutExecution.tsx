@@ -88,7 +88,10 @@ export function WorkoutExecution({ exercises, onCompleteExercise, onFinish, onAb
       className="fixed inset-0 z-50 bg-[#0d0d18] flex flex-col max-w-lg mx-auto overflow-hidden"
     >
       {/* Top bar */}
-      <div className="flex items-center justify-between px-4 pt-8 pb-2 flex-shrink-0">
+      <div
+        className="flex items-center justify-between px-4 pb-2 flex-shrink-0"
+        style={{ paddingTop: 'max(1rem, env(safe-area-inset-top))' }}
+      >
         <div className="text-xs text-gray-500 font-semibold tracking-wider uppercase">
           {currentIndex + 1} / {exercises.length}
         </div>
@@ -188,7 +191,10 @@ export function WorkoutExecution({ exercises, onCompleteExercise, onFinish, onAb
             </div>
 
             {/* CTA button */}
-            <div className="fixed bottom-0 left-0 right-0 px-5 pb-8 pt-4 z-10 max-w-lg mx-auto bg-gradient-to-t from-[#0d0d18] to-transparent">
+            <div
+              className="fixed bottom-0 left-0 right-0 px-5 pt-4 z-10 max-w-lg mx-auto bg-gradient-to-t from-[#0d0d18] to-transparent"
+              style={{ paddingBottom: 'max(2rem, env(safe-area-inset-bottom))' }}
+            >
               <motion.button
                 whileTap={{ scale: 0.97 }}
                 onClick={handleCompleteExercise}

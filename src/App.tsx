@@ -10,9 +10,9 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0d0d18] text-white flex flex-col max-w-lg mx-auto relative">
+    <div className="min-h-screen-dvh bg-[#0d0d18] text-white flex flex-col max-w-lg mx-auto relative">
       {/* Header */}
-      <header className="flex items-center justify-between px-5 pt-6 pb-3">
+      <header className="flex items-center justify-between px-5 pb-3 pt-safe" style={{ paddingTop: 'max(1.5rem, env(safe-area-inset-top))' }}>
         <div className="flex items-center gap-2.5">
           <div className="p-2 bg-blue-500/20 rounded-xl">
             <Dumbbell size={20} className="text-blue-400" />

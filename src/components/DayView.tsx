@@ -380,7 +380,10 @@ export function DayView({ dayIndex }: Props) {
       </motion.div>
 
       {/* Floating bottom CTA — Start / End / Add */}
-      <div className="fixed bottom-5 left-0 right-0 flex justify-center px-4 z-30 pointer-events-none">
+      <div
+        className="fixed left-0 right-0 flex justify-center px-4 z-30 pointer-events-none"
+        style={{ bottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
+      >
         <div className="pointer-events-auto flex gap-2">
           {!isActive && day.exercises.length > 0 && (
             <motion.button

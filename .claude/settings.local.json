@@ -20,7 +20,25 @@
       "Bash(npx tsc *)",
       "Read(//tmp/**)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git --version)",
+      "Bash(brew install *)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(env)",
+      "Bash(git config *)",
+      "Bash(git checkout *)",
+      "Bash(git reset *)",
+      "Bash(cp -r dist/* .)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(python3 -c \"from PIL import Image\")",
+      "Bash(qlmanage -t -s 512 -o /tmp/ public/icon.svg)",
+      "Bash(qlmanage -t -s 1024 -o /tmp/ public/icon.svg)",
+      "Bash(sips -z 180 180 /tmp/icon.svg.png --out public/apple-touch-icon.png)",
+      "Bash(sips -z 192 192 /tmp/icon.svg.png --out public/icon-192.png)",
+      "Bash(sips -z 512 512 /tmp/icon.svg.png --out public/icon-512.png)",
+      "Bash(curl -s http://localhost:3000/pt-workout-app/)",
+      "Bash(git rm *)"
     ]
   }
 }
