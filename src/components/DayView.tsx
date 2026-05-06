@@ -379,29 +379,29 @@ export function DayView({ dayIndex }: Props) {
         />
       </motion.div>
 
-      {/* Floating bottom CTA — Start / End / Add */}
+      {/* Floating bottom CTA — Start / Add */}
       <div
         className="fixed left-0 right-0 flex justify-center px-4 z-30 pointer-events-none"
         style={{ bottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
       >
-        <div className="pointer-events-auto flex gap-2">
+        <div className="pointer-events-auto flex items-center gap-2">
           {!isActive && day.exercises.length > 0 && (
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => startWorkout(dayIndex)}
-              className={`flex items-center gap-2 px-5 py-3 rounded-full text-white font-bold shadow-lg shadow-black/50 transition-colors ${cfg.btnBg}`}
+              className={`flex items-center gap-2 px-5 py-3.5 rounded-full text-white font-bold shadow-xl shadow-black/40 transition-colors ${cfg.btnBg}`}
             >
-              <Play size={18} fill="white" />
+              <Play size={17} fill="white" />
               Programa Başla
             </motion.button>
           )}
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => setAddOpen(true)}
-            className="flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/15 backdrop-blur rounded-full text-white font-bold shadow-lg"
+            className="flex items-center gap-1.5 px-4 py-3.5 rounded-full font-bold shadow-xl shadow-black/40 transition-colors border border-white/20 bg-[#1a1a2e]/90 backdrop-blur text-white hover:bg-white/10"
           >
-            <Plus size={18} />
-            {day.exercises.length === 0 ? 'Hareket Ekle' : 'Ekle'}
+            <Plus size={17} strokeWidth={2.5} />
+            {day.exercises.length === 0 ? 'Hareket Ekle' : 'Hareket Ekle'}
           </motion.button>
         </div>
       </div>
