@@ -56,10 +56,10 @@ export function ExerciseCard({
             src={exercise.imageUrl}
             alt={exercise.name}
             onError={() => setImgError(true)}
-            className="w-full h-32 object-cover bg-slate-800"
+            className="w-full h-24 object-cover bg-slate-800"
           />
         ) : (
-          <div className="w-full h-32 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
+          <div className="w-full h-24 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
             <Dumbbell size={36} className="text-white/20" />
           </div>
         )}
